@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Service</title>
-</head>
-<body>
-    
-</body>
+    <!-- Tailwind & DaisyUI Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/4dedb32f0c.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Style -->
+    <style>
+      .font-eb {
+        font-family: "EB Garamond", serif;
+      }
+      .font-pop {
+        font-family: "Poppins", sans-serif;
+      }
+      .banner-h{
+        height: calc(100vh - 125px );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+        <!-- Nav BAr Section -->
+        <nav class="max-w-screen-xl mx-auto mt-4 mb-5">
+            <div class="navbar justify-center">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost md:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-[#707070] font-pop"><a>Home</a></li>
+                        <li class="text-[#707070] font-pop"><a>Services</a></li>
+                        <li class="text-[#707070] font-pop"><a>Cases</a></li>
+                        <li class="text-[#707070] font-pop"><a>Blog</a></li>
+                        <li class="text-[#707070] font-pop"><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center gap-4 justify-center">
+                    <img class="w-9 md:w-11" src="./images/business.png" alt="">
+                  <a class=" normal-case font-eb text-[#414040] text-xl md:text-4xl font-extrabold">Justice</a>
+                </div>
+                </div>
+                <div class="navbar-center hidden md:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#707070] font-pop"><a>Home</a></li>
+                    <li class="text-[#707070] font-pop"><a>Services<i class="fa-solid fa-greater-than fa-sm" style="color: #707070;"></i></a></li>
+                    <li class="text-[#707070] font-pop"><a>Cases<i class="fa-solid fa-greater-than fa-sm" style="color: #707070;"></i></a></li>
+                    <li class="text-[#707070] font-pop"><a>Blog<i class="fa-solid fa-greater-than fa-sm" style="color: #707070;"></i></a></li>
+                    <li class="text-[#707070] font-pop"><a>Contact Us<i class="fa-solid fa-greater-than fa-sm" style="color: #707070;"></i></a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex  ">
+                  <a class="btn md:px-7 md:py-5 bg-[#B68C5A] text-white font-pop">Free Consultation</a>
+                </div>
+              </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="max-w-screen-xl mx-auto mb-28">
+            <div class="hero banner-h bg-cover bg-no-repeat rounded-lg" style="background-image: url(./images/banner.png);">
+                
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class=" text-4xl lg:text-6xl font-extrabold font-eb  mb-6">We Provide Effective </br> Legal Solutions</h1>
+                    <p class="mb-8 max-w-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <input type="text" placeholder="Search your services" class="input input-bordered  w-full max-w-xl font-pop font-normal text-base" />    
+                    <button class="btn bg-[#B68C5A] border-none font-pop font-semibold text-white">Get Started</button>
+                </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </header>
+
+  </body>
 </html>
